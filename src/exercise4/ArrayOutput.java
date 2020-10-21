@@ -9,6 +9,7 @@ public class ArrayOutput {
         Scanner input = new Scanner(System.in);
         int count = input.nextInt();
         int[] numbers = new int[count];
+        char a=' '; 
 
         System.out.println("Enter numbers: ");
         for (int index = 0; index < numbers.length; index++) {
@@ -17,36 +18,17 @@ public class ArrayOutput {
             
         
         }
-      for (int red=0;red<numbers.length;red++){
-      if(red==0){
-        System.out.println(numbers[0]);
-      }else if (red==1){
-        System.out.println(" " + numbers[1]);
-
-      }else if (red==2){
-        System.out.println("  " + numbers[2]);
-
-      }else if (red==3){
-        System.out.println("   " + numbers[3]);
-      }else if (red==4){
-        System.out.println("    " + numbers[4]);
-        }else if (red==5){
-        System.out.println("     " + numbers[5]);
-        }else if (red==6){
-        System.out.println("      " + numbers[6]);
-        }else if (red==7){
-        System.out.println("       " + numbers[7]);
-        }else if (red==8){
-        System.out.println("        " + numbers[8]);
-        }else if (red==9){
-        System.out.println("         " + numbers[9]);
+        for(int i=0;i<numbers.length;i++){
+          for (int k=0; k<i;k++){
+            System.out.print(a);
+          }
+          System.out.println(numbers[i]);
         }
-
+     
 
         
         
     
    
   }  
-}
 }

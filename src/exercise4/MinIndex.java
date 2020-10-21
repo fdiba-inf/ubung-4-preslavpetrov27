@@ -1,10 +1,9 @@
-
 package exercise4;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class MaxElement {
+public class MinIndex {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -16,17 +15,22 @@ public class MaxElement {
         for (int index = 0; index < numbers.length; index++) {
             numbers[index] = input.nextDouble();
         }
-      double maxel=numbers[0];
+        int min=0;
+      double minel=numbers[0];
        for ( int index=1 ; index<numbers.length ; index++){
-         if (maxel<numbers[index]){
-           maxel=numbers[index];
+         if (minel>numbers[index]){
+           minel=numbers[index];
+           min = index;
          }
-       }
         
+  
+       }
+
+      
       
 
 
       
-        System.out.println("Max number:  " + maxel);
+        System.out.println("Min index:  " + min);
     }
 }
