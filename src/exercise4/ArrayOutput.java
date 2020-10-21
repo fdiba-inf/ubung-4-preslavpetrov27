@@ -20,7 +20,7 @@ public class ArrayOutput {
       for (int red=0;red<numbers.length;red++){
       if(red==0){
         System.out.println(numbers[0]);
-      }else if (red==-1){
+      }else if (red==1){
         System.out.println(" " + numbers[1]);
 
       }else if (red==2){
